@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta charset="UTF-8">
+	
+<title>HTML Practice 6 - Tables</title>
+
+<style type="text/css">
+
+
+</style>
+</head>
+<body>
+<div >
+   <table >
+	
+   </table>
+</div>
+
+
+
+</body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Practice 6 - Tables</title>
+<style type="text/css">
+/* Center the table container */
+.center-table {
+    text-align: center; /* for most browsers */
+}
+
+/* Table styling: centered, width 550px, borders, spacing */
+.my-table {
+    margin: auto; /* centers table */
+    width: 550px;
+    border: 2px solid black;
+    border-collapse: collapse; /* combine borders */
+}
+
+/* Borders and padding for cells */
+.my-table th, .my-table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Caption styling */
+.caption-style {
+    caption-side: top;
+    font-weight: bold;
+    color: #003300; /* dark green */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* First column formatting */
+.first-col {
+    background-color: #CCCCCC;
+    width: 25%;
+}
+
+/* Days of the week column headings */
+.days {
+    background-color: #99FF66;
+}
+</style>
+</head>
+<body>
+
+<div class="center-table">
+   <table class="my-table">
+      <caption class="caption-style">Marcus Connors 2026 Spring Schedule</caption>
+
+      <!-- Define columns -->
+      <colgroup class="first-col"></colgroup>
+      <colgroup class="days" span="5"></colgroup>
+
+      <!-- Table header for days -->
+      <thead>
+         <tr>
+            <th>Time</th>
+            <th>Tuesday</th>
+            <th>Thursday</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>10:00 - 11:15</td>
+            <td>HW</td>
+            <td>MKTG 3600</td>
+         </tr>
+         <tr>
+            <td>11:30 - 12:45</td>
+            <td>INFO 2200</td>
+            <td>INFO 2200</td>
+         </tr>
+         <tr>
+            <td>1:00 - 2:15</td>
+            <td>FIN 1060</td>
+            <td>HW</td>
+         </tr>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</body>
+</html>
