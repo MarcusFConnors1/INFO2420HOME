@@ -41,9 +41,19 @@ function swapImage(index) {
 </script>
 
 <style type="text/css">
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: url("Images/background1.jpg");
+    background-size: 100% 100%;      /* shows full image */
+    background-repeat: no-repeat;  /* prevents tiling */
+    background-position: center;   /* centers image */
 }
 
 #thumbs, #image {
@@ -123,11 +133,6 @@ onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
 </div>
 
 <br><br>
-
-<!-- BACKGROUND IMAGE DISPLAY -->
-
-<h2>Two Column Background Image</h2>
-<img src="Images/background1.jpg" alt="Two Column Background Example" width="900" height="150">
 
 </body>
 </html>
