@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Graphics - Project 6</title>
+
+<script type="text/javascript">
+// Preload rollover images
+function preloadImages() {
+    var images = [
+        "Images/Print2.jpg",
+        "Images/Logo2.jpg"
+    ];
+    for (var i = 0; i < images.length; i++) {
+        var img = new Image();
+        img.src = images[i];
+    }
+}
+
+// Image swap arrays
+var imgArray = [
+    "Images/CoupleBike1Lg.jpg",
+    "Images/CoupleCampingLg.jpg",
+    "Images/CoupleEveningLg.jpg",
+    "Images/CoupleSnowboardLg.jpg"
+];
+
+var titleArray = [
+    "Image One Description",
+    "Image Two Description",
+    "Image Three Description",
+    "Image Four Description"
+];
+
+// Swap function
+function swapImage(index) {
+    document.getElementById("mainImage").src = imgArray[index];
+    document.getElementById("caption").innerHTML = titleArray[index];
+}
+</script>
+
+<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#thumbs, #image {
+    width: 700px;
+    border: solid 1px #000;
+    text-align: center;
+    margin: 0 auto;
+    color: #000;
+    background: #eee;
+    padding: 5px;
+}
+
+#thumbs {
+    margin-top: 10px;
+}
+
+#thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#image {
+    height: 400px;
+}
+
+.instructions {
+    font-style: italic;
+}
+</style>
+
+</head>
+
+<body onload="preloadImages()">
+
+<h1>Graphics Project 6</h1>
+
+<!-- PRINT BUTTON ROLLOVER -->
+
+<div>
+<a href="#"
+onmouseover="document.getElementById('print').src='Images/Print2.jpg';"
+onmouseout="document.getElementById('print').src='Images/Print1.jpg';">
+<img src="Images/Print1.jpg" alt="Print Page Button" width="200" height="50" id="print">
+</a>
+</div>
+
+<br>
+
+<!-- LOGO ROLLOVER -->
+
+<div>
+<a href="#"
+onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
+onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
+<img src="Images/Logo1.jpg" alt="Company Logo" id="logo">
+</a>
+</div>
+
+<br><br>
+
+<!-- IMAGE SWAP SECTION -->
+
+<div id="image">
+<p class="instructions">Hover over a thumbnail to view the image.</p>
+<img src="Images/CoupleBike1Lg.jpg" alt="Large Image" id="mainImage">
+</div>
+
+<div id="thumbs">
+<img src="Images/CoupleBike1Lg.jpg" alt="Thumbnail 1" onmouseover="swapImage(0)">
+<img src="Images/CoupleCampingLg.jpg" alt="Thumbnail 2" onmouseover="swapImage(1)">
+<img src="Images/CoupleEveningLg.jpg" alt="Thumbnail 3" onmouseover="swapImage(2)">
+<img src="Images/CoupleSnowboardLg.jpg" alt="Thumbnail 4" onmouseover="swapImage(3)">
+</div>
+
+<br><br>
+
+<!-- BACKGROUND IMAGE DISPLAY -->
+
+<h2>Two Column Background Image</h2>
+<img src="Images/background1.jpg" alt="Two Column Background Example" width="900" height="150">
+
+</body>
+</html>
