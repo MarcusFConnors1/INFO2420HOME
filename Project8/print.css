@@ -1,0 +1,72 @@
+/* BODY */
+body {
+  margin: 0;
+  background-color: #ffffff; /* white background */
+  color: #000000; /* black text */
+  font-family: "Times New Roman", Times, serif; /* serif font for print */
+}
+
+/* CONTAINER */
+#container {
+  width: 100%; /* full width for printing */
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  float: none; /* remove float for cleaner print */
+  padding: 10px;
+}
+
+/* BANNER */
+.banner {
+  display: block;
+  margin: 0 auto;
+}
+
+/* NAV */
+nav {
+  display: none; /* hide navigation in print */
+}
+
+/* SECTION */
+section {
+  width: 100%;
+  background-image: none; /* remove background image */
+  overflow: visible;
+}
+
+/* ARTICLE */
+article {
+  width: 95%; /* slight margin for readability */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* PARAGRAPHS */
+article p {
+  text-align: left;
+}
+
+/* TRIBUTE IMAGE */
+.tribute {
+  width: 200px;
+  float: none; /* remove right column floating */
+  margin: 10px auto;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  display: none; /* hide footer in print */
+}@charset "utf-8";
+/* CSS Document */
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>My Business Home</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../mystyles.css">
+<link rel="stylesheet" href="../print.css" media="print">
+<script src="../myscripts.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body onload="preloadImages()">
+
+<div id="container">
+
+<header>
+  <img src="../Images/Logo1.jpg" alt="Company Logo" class="logo">
+  <img src="../Images/banner5.jpg" alt="Banner" class="banner">
+
+  <nav>
+    <a href="../Home.html">Home</a>
+    <a href="../AboutUs.html">About Us</a>
+    <a href="../Tributes.html">Tributes</a>
+  </nav>
+</header>
+
+<section><!-- TemplateBeginEditable name="PageContent" -->
+  <article>
+    <h1>Welcome to My Business</h1>
+    <p> Welcome to our website! We are dedicated to providing high-quality
+      services and creating an enjoyable experience for all visitors.
+      Explore our site to learn more about what we offer. </p>
+    <h2>Photo Gallery</h2>
+    <img src="../Images/photo1.jpg" alt="Main Image" id="mainImage" width="400"> <br>
+    <br>
+    <img src="../Images/photo1.jpg" alt="Image 1" width="100"
+     onMouseOver="swapImage('Images/photo1.jpg')"> <img src="../Images/photo2.jpg" alt="Image 2" width="100"
+     onMouseOver="swapImage('Images/photo2.jpg')"> <img src="../Images/photo3.jpg" alt="Image 3" width="100"
+     onMouseOver="swapImage('Images/photo3.jpg')">
+    <h2>Featured Tribute</h2>
+    <img src="../Images/Food1Sm.jpg" alt="Tribute Image" class="tribute">
+    <p> This tribute highlights an inspiring individual who has made a
+      meaningful impact. Their dedication and passion continue to influence
+      many people today... <a href="../Tributes.html">more >></a> </p>
+  </article>
+<!-- TemplateEndEditable --></section>
+
+<footer>
+  <p>Email: yourname@email.com</p>
+  <p>This web site has been created solely for educational purposes.</p>
+</footer>
+
+</div>
+
+</body>
+</html>
